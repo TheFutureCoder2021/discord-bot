@@ -15,12 +15,13 @@ async def on_ready():
 @bot.command(name="ping")
 async def ping(ctx:commands.Context):
     await ctx.send("Pong!")
-
-
-if __name__ in "__main__":
+def main():
     logging.basicConfig(level=logging.INFO)
     bot.run(BOT_TOKEN)
 
+
+if __name__ in "__main__":
+    main()
 
 
 
