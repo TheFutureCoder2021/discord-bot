@@ -18,6 +18,7 @@ async def ping(ctx:commands.Context):
 def main():
     logging.basicConfig(level=logging.INFO)
     bot.run(BOT_TOKEN)
+    load_cogs(client=bot)
 
 
 if __name__ in "__main__":

@@ -11,5 +11,11 @@ BOT_TOKEN = os.getenv("TOKEN")
 
 
 def blacklisted():
-    with open("./blacklisted.json", "r")as fp:
+    with open("blacklisted.json", "r")as fp:
         return json.load(fp)
+
+
+def load_cogs(client):
+    for folder in os.listder('./cogs'):
+        if os.path.exists(os.path.join('./cogs', folder, '__init__.py')):
+            client.load_extension(f'cogs.{folder}')
