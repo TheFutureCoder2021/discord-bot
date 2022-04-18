@@ -1,4 +1,4 @@
-.env 
+.env
 .gitpod.yml
 blacklisted.json 
 __pycache__
