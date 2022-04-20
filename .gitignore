@@ -1,4 +1,3 @@
 .gitpod.yml
-blacklisted.json 
 __pycache__
 .env 
